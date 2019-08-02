@@ -10,7 +10,7 @@
 
 
 ## Usage
-- To pull latest lsc-cnn code from git submodule
+- To pull latest lsc-cnn code from git submodule  
 `git submodule foreach git pull`
 
 - Run the docker image with a shared folder from host and also a shared folder that points to the dataset on the host:
