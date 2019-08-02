@@ -2,7 +2,7 @@
 
 ## Usage
 - Make sure docker and nvidia-docker installed.
-- git clone --recursive https://github.com/levan92/lsc-cnn_docker.git
+- `git clone --recursive https://github.com/levan92/lsc-cnn_docker.git`
     - "recursive" is important as lsc-cnn is a submodule
 
 - Next, need to pull the docker image:
