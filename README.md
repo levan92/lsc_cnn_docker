@@ -2,8 +2,11 @@
 
 ## Usage
 - Make sure docker and nvidia-docker installed.
-- First need to pull the docker image:
-`sudo docker pull nvcr.io/nvidia/pytorch:18.04-py3`
+- git clone --recursive <this github repo>
+    - "recursive" is important as lsc-cnn is a submodule
+
+- Next, need to pull the docker image:
+`sudo docker pull levan92/lsc-cnn:version2`
 
 - Run the docker image with a shared folder from host and also a shared folder that points to the dataset on the host:
 `sudo nvidia-docker run --rm -it --ipc=host --volume="/home/dh/Workspace/lsc_cnn_docker/lsc-cnn/:/workspace/lsc-cnn" --volume="/media/dh/Data/CrowdCounting:/workspace/dataset"  levan92/lsc-cnn:version2`
